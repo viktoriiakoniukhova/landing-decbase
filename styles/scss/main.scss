@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap");
+
+@import "base/reset";
+@import "base/root";
+
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+@import "layout/wrapper";
+@import "layout/header";
+@import "layout/widget";
+@import "layout/about";
+@import "layout/services";
+@import "layout/about-us";
+@import "layout/about-us-20";
+@import "layout/diagram";
+@import "layout/news";
+@import "layout/testimonials";
+@import "layout/newsletter";
+@import "layout/footer";
+
+@import "components/buttons";
+@import "components/decorations";
+@import "components/input";
+@import "components/socials";
+@import "components/swiper";
+@import "components/loader";
+@import "components/animation";
+@import "components/progress-bar";
+@import "components/congrats-popup";

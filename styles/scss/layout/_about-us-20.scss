@@ -1,0 +1,47 @@
+.wrapper__main_about-us-20 {
+  @include flex($a-items: center);
+  margin: $section_margin;
+  @media screen and (max-width: $midsize) {
+    margin: $section_margin-small;
+    @include flex($d: column-reverse, $a-items: center, $g: 3em);
+  }
+  .wrapper__main_about-us-20_content {
+    @include flex($d: column, $g: 1.5em);
+    flex: 1;
+    .wrapper__main_about-us-20_content_img {
+      @include flex();
+      flex: 1;
+      img {
+        max-width: 100%;
+      }
+      @media screen and (max-width: $medium) {
+        align-self: center;
+        width: 70%;
+      }
+    }
+    h1 {
+      @include poppins($fw: 500, $fz: 5rem, $lh: 1.05);
+      color: #212121;
+      @media screen and (max-width: $large) {
+        @include poppins($fw: 500, $fz: 3rem, $lh: 1.25);
+      }
+      @media screen and (max-width: $medium) {
+        @include poppins($fw: 500, $fz: 2rem, $lh: 1.25);
+        text-align: center;
+      }
+    }
+    button {
+      @include google-sans($fw: 700, $fz: 1.6rem, $lh: 1);
+    }
+  }
+  .wrapper__main_about-us-20_img {
+    @include flex();
+    flex: 1;
+    @media screen and (max-width: $midsize) {
+      width: 70%;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+}

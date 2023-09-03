@@ -1,0 +1,87 @@
+.wrapper__header {
+  position: fixed;
+  top: 0;
+  right: 5em;
+  left: 5em;
+  background-color: #ffffff;
+  z-index: 10;
+
+  @include flex($j-content: space-between, $a-items: center);
+  padding: 0.5em;
+  @media screen and (max-width: $large) {
+    @include flex($d: column, $j-content: space-between, $a-items: center);
+  }
+  @media screen and (max-width: $medium) {
+    @include flex($d: row, $j-content: space-between, $a-items: center);
+    right: 4em;
+    left: 4em;
+  }
+  @media screen and (max-width: $small) {
+    right: 2em;
+    left: 2em;
+  }
+  .wrapper__header_logo {
+    padding: 0.5em 0;
+    img {
+      max-width: 100%;
+    }
+  }
+  .wrapper__header_content {
+    @include flex($j-content: flex-end, $a-items: center, $g: 2em);
+    flex-grow: 1;
+    @media screen and (max-width: $medium) {
+      flex-direction: row-reverse;
+      flex-grow: 0;
+    }
+    .wrapper__header_content_burger {
+      display: none;
+      @media screen and (max-width: $medium) {
+        display: flex;
+      }
+    }
+    .wrapper__header_content_nav {
+      @include flex($a-items: center, $g: 2em);
+      a {
+        text-decoration: none;
+        @include google-sans($fz: 1.7rem);
+        color: #111111;
+        text-transform: uppercase;
+        font-weight: 700;
+        transition: all ease-out 0.5s;
+        padding: 0.5em;
+        @media screen and (max-width: $large) {
+          font-size: 1.4rem;
+        }
+        &:hover {
+          transition: all ease-in 0.5s;
+          transform: scale(1.2);
+          border: 1px solid #37806b;
+          border-radius: 1em 0 1em 0;
+          color: #37806b;
+        }
+        &:focus,
+        &:active {
+          color: #37806b;
+        }
+      }
+
+      @media screen and (max-width: $medium) {
+        display: none;
+      }
+    }
+    .wrapper__header_content_sign {
+      @include flex($a-items: center, $g: 2em);
+      .btn_signup {
+        @include google-sans($fz: 1.4rem);
+      }
+      select {
+        border: none;
+        outline: none;
+        background-color: #fff1da;
+      }
+      @media screen and (max-width: $small) {
+        display: none;
+      }
+    }
+  }
+}

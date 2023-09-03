@@ -1,0 +1,103 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "title": "interior design",
+      "imgURL": "assets/services-interior-design.svg",
+      "imgHoverURL": "assets/services-interior-design_hover.svg",
+      "items": [
+        {
+          "id": 1,
+          "title": "interior design1",
+          "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, illo."
+        },
+        {
+          "id": 2,
+          "title": "interior design2",
+          "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, illo."
+        },
+        {
+          "id": 3,
+          "title": "interior design3",
+          "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, illo."
+        },
+        {
+          "id": 4,
+          "title": "interior design4",
+          "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, illo."
+        },
+        {
+          "id": 5,
+          "title": "interior design5",
+          "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, illo."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "architecture",
+      "imgURL": "assets/services-architecture.svg",
+      "imgHoverURL": "assets/services-architecture_hover.svg",
+      "items": [
+        {
+          "id": 1,
+          "title": "architecture1",
+          "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, illo."
+        },
+        {
+          "id": 2,
+          "title": "architecture2",
+          "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, illo."
+        },
+        {
+          "id": 3,
+          "title": "architecture3",
+          "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, illo."
+        },
+        {
+          "id": 4,
+          "title": "architecture4",
+          "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, illo."
+        },
+        {
+          "id": 5,
+          "title": "architecture5",
+          "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, illo."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "planning",
+      "imgURL": "assets/services-planning.svg",
+      "imgHoverURL": "assets/services-planning_hover.svg",
+      "items": [
+        {
+          "id": 1,
+          "title": "planning1",
+          "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, illo."
+        },
+        {
+          "id": 2,
+          "title": "planning2",
+          "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, illo."
+        },
+        {
+          "id": 3,
+          "title": "planning3",
+          "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, illo."
+        },
+        {
+          "id": 4,
+          "title": "planning4",
+          "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, illo."
+        },
+        {
+          "id": 5,
+          "title": "planning5",
+          "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, illo."
+        }
+      ]
+    }
+  ]
+}

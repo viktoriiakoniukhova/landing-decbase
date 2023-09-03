@@ -1,0 +1,92 @@
+.wrapper__main_testimonials {
+  @include flex($d: column, $a-items: unset);
+  margin: $section_margin;
+  @media screen and (max-width: $small) {
+    margin: $section_margin-small;
+  }
+  .wrapper__main_testimonials_header {
+    @include flex($d: column, $a-items: unset, $g: 1em);
+    margin: $header_margin;
+    span {
+      @include google-sans($fw: 600, $fz: 2rem, $lh: 1.3);
+      text-transform: uppercase;
+      text-align: center;
+      color: #646464;
+      @media screen and (max-width: $large) {
+        @include google-sans($fw: 600, $fz: 1.5rem, $lh: 1.3);
+      }
+    }
+    h1 {
+      @include poppins($fw: 600, $fz: 4.8rem, $lh: 1.05);
+      color: #212121;
+      text-align: center;
+      @media screen and (max-width: $large) {
+        @include poppins($fw: 600, $fz: 2.8rem, $lh: 1.25);
+      }
+      @media screen and (max-width: $medium) {
+        @include poppins($fw: 600, $fz: 1.8rem, $lh: 1.25);
+      }
+    }
+  }
+  .wrapper__main_testimonials_content {
+    @include flex($a-items: unset, $j-content: space-between, $g: 2em);
+    .testimonial {
+      display: flex;
+      width: 70%;
+      left: 2.5em;
+      position: relative;
+      @include leaf-container($p: 1em, $bgc: #ffffff, $r: 2em);
+      .testimonial_img-cont {
+        position: absolute;
+        left: -2.5em;
+        top: 2.5em;
+        width: 5em;
+        height: 5em;
+        @include leaf-container($p: 0, $bgc: #ffffff, $r: 2em);
+        overflow: hidden;
+        img {
+          max-width: 100%;
+          object-fit: cover;
+        }
+      }
+      .testimonial_content {
+        @include flex($d: column, $a-items: unset, $g: 1em);
+        padding-left: 2em;
+        h3 {
+          @include google-sans($fw: 700, $fz: 2.4rem, $lh: 1.4);
+          color: #212121;
+          text-align: center;
+          min-height: 3.5em;
+          @media screen and (max-width: $medium) {
+            @include google-sans($fw: 700, $fz: 1.8rem, $lh: 1.2);
+          }
+          @media screen and (max-width: $midsize) {
+            @include google-sans($fw: 700, $fz: 1rem, $lh: 1.2);
+          }
+        }
+        span {
+          @include google-sans($fw: 400, $fz: 1.6rem, $lh: 1.2);
+          color: #646464;
+          text-align: center;
+          @media screen and (max-width: $medium) {
+            @include google-sans($fw: 400, $fz: 1.4rem, $lh: 1.2);
+          }
+          @media screen and (max-width: $midsize) {
+            @include google-sans($fw: 400, $fz: 1rem, $lh: 1.2);
+          }
+        }
+        p {
+          @include google-sans($fw: 400, $fz: 1.8rem, $lh: 1.2);
+          color: #646464;
+          text-align: center;
+          @media screen and (max-width: $medium) {
+            @include google-sans($fw: 400, $fz: 1.4rem, $lh: 1.2);
+          }
+          @media screen and (max-width: $midsize) {
+            @include google-sans($fw: 400, $fz: 1rem, $lh: 1.2);
+          }
+        }
+      }
+    }
+  }
+}

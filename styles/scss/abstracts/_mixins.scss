@@ -1,0 +1,61 @@
+@mixin flex(
+  $d: row,
+  $w: nowrap,
+  $j-content: flex-start,
+  $a-items: flex-start,
+  $g: 0
+) {
+  display: flex;
+  flex-direction: $d;
+  flex-wrap: $w;
+  justify-content: $j-content;
+  align-items: $a-items;
+  gap: $g;
+}
+
+@mixin google-sans($fw: 400, $fz: 1.7rem, $lh: 1.3) {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: $fw;
+  font-size: $fz;
+  line-height: $lh;
+}
+
+@mixin poppins($fw: 600, $fz: 1.8rem, $lh: 1.5) {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: $fw;
+  font-size: $fz;
+  line-height: $lh;
+}
+
+@mixin leaf-container-border(
+  $p: 0,
+  $bgc: transparent,
+  $w: 100%,
+  $h: 100%,
+  $coord_x: 1em,
+  $coord_y: 1em
+) {
+  padding: $p;
+  background-color: $bgc;
+  top: $coord_y;
+  left: $coord_x;
+  width: $w;
+  height: $h;
+  border: 2px solid #b0855b;
+  border-radius: 8em 0;
+}
+
+@mixin leaf-container($p: 1em, $bgc: #ffffff, $r: 1em) {
+  padding: $p;
+  background-color: $bgc;
+  border: none;
+  border-radius: $r 0;
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+@mixin shift-on($x_coord: 0, $y_coord: 0) {
+  top: $y_coord;
+  left: $x_coord;
+}

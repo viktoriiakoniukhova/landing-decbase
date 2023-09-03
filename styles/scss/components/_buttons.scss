@@ -1,0 +1,99 @@
+button {
+  @include flex();
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 0.5em 1.2em;
+}
+
+button:disabled {
+  cursor: auto;
+  color: #ffffff;
+  background: #698e83;
+  &:hover,
+  &:active,
+  &:focus {
+    color: #ffffff;
+    background: #698e83;
+  }
+}
+.btn_signup {
+  border: 1px solid #caa892;
+  border-radius: 1em 0;
+  color: #ffffff;
+  background-color: #caa892;
+  &:hover {
+    color: #caa892;
+    background-color: #ffffff;
+  }
+}
+
+.btn_leaf {
+  border: 1px solid #37806b;
+  border-radius: 1em 0;
+  color: #ffffff;
+  background: #37806b;
+  text-transform: uppercase;
+  &:hover {
+    color: #37806b;
+    background-color: #ffffff;
+  }
+}
+
+.btn_rounded {
+  border: 5px solid #37806b;
+  border-radius: 2em;
+  color: #ffffff;
+  background: #37806b;
+  text-transform: uppercase;
+  &:hover,
+  &:active,
+  &:focus {
+    color: #37806b;
+    background-color: #ffffff;
+  }
+}
+
+.all-active {
+  color: #37806b;
+  background-color: #ffffff;
+  &:hover,
+  &:active,
+  &:focus {
+    color: #ffffff;
+    background: #37806b;
+  }
+}
+
+.all-items {
+  @include flex($w: wrap, $j-content: center, $g: 3em);
+  flex: 0 1 25%;
+  @media screen and (max-width: $large) {
+    flex-basis: 30%;
+  }
+  @media screen and (max-width: $midsize) {
+    flex-basis: 100%;
+  }
+}
+.all-items-flex {
+  @include flex($j-content: space-around, $g: 1em);
+  @include leaf-container($p: 1em, $bgc: #ffffff, $r: 3em);
+  &:hover {
+    background-color: #caa892;
+    color: #ffffff;
+  }
+  img {
+    width: 25px;
+    height: 25px;
+    padding-top: 0.5em;
+  }
+  section {
+    h5 {
+      @include google-sans($fw: 700, $fz: 2.4rem, $lh: 1.5);
+    }
+    p {
+      @include google-sans($fw: 400, $fz: 1.8rem, $lh: 1.5);
+    }
+  }
+}

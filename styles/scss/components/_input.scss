@@ -1,0 +1,23 @@
+input {
+  padding: 1.5em 3em;
+  background: #eeeeee;
+  border-radius: 2em 0;
+  border: none;
+  outline: none;
+  vertical-align: center;
+  @media screen and (max-width: $small) {
+    padding: 1.5em;
+  }
+}
+
+.error {
+  color: #ffffff;
+  background: #f49f9f;
+}
+
+span {
+  &.error {
+    color: #f49f9f;
+    background: #ffffff;
+  }
+}

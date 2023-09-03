@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <title>DECBASE</title>
+  </head>
+  <body>
+    <div class="loader-container" id="loader-full-page">
+      <div class="loader">
+        <div class="loader-line"></div>
+        <div class="loader-line"></div>
+        <div class="loader-line"></div>
+        <div class="loader-line"></div>
+        <div class="loader-line"></div>
+        <div class="loader-line"></div>
+        <div class="loader-line"></div>
+        <div class="loader-line"></div>
+      </div>
+    </div>
+    <div class="wrapper" id="wrapper">
+      <header class="wrapper__header">
+        <div class="wrapper__header_logo">
+          <img src="./assets/logo.svg" alt="decbase" />
+        </div>
+        <div class="wrapper__header_content">
+          <div class="wrapper__header_content_burger">
+            <img src="./assets/burger-menu.png" alt="burger-menu" />
+          </div>
+          <nav class="wrapper__header_content_nav">
+            <a href="#home">Home</a>
+            <a href="#diagram">Project</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#blog">Blog</a>
+            <a href="#shop">Shop</a>
+            <a href="#newsletter">Contact</a>
+          </nav>
+          <div class="wrapper__header_content_sign">
+            <button class="btn_signup">Sign up</button>
+          </div>
+        </div>
+      </header>
+      <div class="wrapper__progress-bar">
+        <div class="progress-container">
+          <div class="progress-bar" id="bar"></div>
+        </div>
+      </div>
+      <main class="wrapper__main" id="home">
+        <div class="wrapper__main_widget">
+          <div class="loader-container" id="loader-rick-n-morty">
+            <div class="loader">
+              <div class="loader-line"></div>
+              <div class="loader-line"></div>
+              <div class="loader-line"></div>
+              <div class="loader-line"></div>
+              <div class="loader-line"></div>
+              <div class="loader-line"></div>
+              <div class="loader-line"></div>
+              <div class="loader-line"></div>
+            </div>
+          </div>
+          <div class="wrapper__main_widget_card" id="character-card">
+            <div class="wrapper__main_widget_card_content">
+              <span>RICK AND MORTY (FETCH API)</span>
+              <h1>Generated Character</h1>
+              <p>Name:</p>
+              <p>Status:</p>
+              <p>Species:</p>
+              <p>Gender:</p>
+            </div>
+            <div class="wrapper__main_widget_card_img decor-border">
+              <img src="assets/logo.svg" alt="character" />
+              <div class="decor-border-img"></div>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper__main_about" id="shop">
+          <div class="wrapper__main_about_content">
+            <span>MODERN INTERIOR</span>
+            <h1>Create Your Interior Design.</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit
+              reprehenderit neque ex quas esse quis quam ea animi amet! Libero
+              quibusdam molestiae repudiandae modi officia pariatur commodi at,
+              magnam soluta.
+            </p>
+            <button class="btn_leaf">CONTACT</button>
+          </div>
+          <div class="wrapper__main_about_img decor-border">
+            <img src="./assets/about.png" alt="green-furniture" />
+            <div class="decor-border-img"></div>
+          </div>
+        </div>
+        <div class="wrapper__main_services" id="services">
+          <div class="decor-dots">
+            <img src="./assets/decor-dots.svg" alt="dots" />
+          </div>
+          <div class="wrapper__main_services_header">
+            <span>WHAT WE DO</span>
+            <h1>Our Service</h1>
+          </div>
+          <div class="loader-container" id="loader-services">
+            <div class="loader">
+              <div class="loader-line"></div>
+              <div class="loader-line"></div>
+              <div class="loader-line"></div>
+              <div class="loader-line"></div>
+              <div class="loader-line"></div>
+              <div class="loader-line"></div>
+              <div class="loader-line"></div>
+              <div class="loader-line"></div>
+            </div>
+          </div>
+          <div class="wrapper__main_services_content" id="services-content">
+            <div
+              class="wrapper__main_services_content_nav-panel"
+              id="nav-panel"
+            >
+              <button class="btn_rounded" id="all">All</button>
+              <!-- Dynamically create based on JSON categories list, set width base on longest cat -->
+            </div>
+            <div
+              class="wrapper__main_services_content_container"
+              id="services-container"
+            >
+              <!-- Dynamically create based on JSON category items -->
+            </div>
+          </div>
+        </div>
+        <div class="wrapper__main_about-us" id="about">
+          <div class="wrapper__main_about-us_content">
+            <span>ABOUT US</span>
+            <h1>Interioris The Will of An Epoch Mextreo</h1>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form injected
+              humour, or randomised words which don't look even slightly
+              believable.If you are going to use a passage of Lorem Ipsum, sure
+              there isn't anything embarrassing hidden the middleof text. All
+              the Lorem Ipsum generators on the Internettend to repeat
+              predefined chunks as necessary,making this the first true
+              generator on the Internet.
+            </p>
+            <button class="btn_leaf">Learn more</button>
+          </div>
+          <div class="wrapper__main_about-us_img decor-border">
+            <img src="./assets/about-us-1.png" alt="biege-furniture" />
+            <div class="decor-border-img"></div>
+          </div>
+        </div>
+        <div class="wrapper__main_about-us-20">
+          <div class="decor-dots">
+            <img src="./assets/decor-dots.svg" alt="dots" />
+          </div>
+          <div class="wrapper__main_about-us-20_content">
+            <div class="wrapper__main_about-us-20_content_img">
+              <img src="./assets/about-us-2-20.svg" alt="20" />
+            </div>
+            <h1>Years Of Successful Working The Market</h1>
+            <button class="btn_leaf">Read more</button>
+          </div>
+          <div class="wrapper__main_about-us-20_img decor-border">
+            <img src="./assets/about-us-2.png" alt="biege-furniture" />
+            <div class="decor-border-img"></div>
+          </div>
+        </div>
+        <div class="wrapper__main_diagram" id="diagram">
+          <h3>
+            3000+ Completed Work Which <br />
+            WE have Successfully Done
+          </h3>
+          <div class="wrapper__main_diagram_content">
+            <div class="wrapper__main_diagram_content_block">
+              <h1>980</h1>
+              <p>projects</p>
+            </div>
+            <div class="wrapper__main_diagram_content_connector shifted">
+              <img src="./assets/decor-vector.svg" alt="vector" />
+            </div>
+            <div class="wrapper__main_diagram_content_block shifted">
+              <h1>520</h1>
+              <p>happy clients</p>
+            </div>
+            <div class="wrapper__main_diagram_content_connector shifted">
+              <img
+                src="./assets/decor-vector.svg"
+                alt="vector"
+                class="reverse"
+              />
+            </div>
+            <div class="wrapper__main_diagram_content_block">
+              <h1>330</h1>
+              <p>winners</p>
+            </div>
+            <div class="wrapper__main_diagram_content_connector shifted">
+              <img src="./assets/decor-vector.svg" alt="vector" />
+            </div>
+            <div class="wrapper__main_diagram_content_block shifted">
+              <h1>120</h1>
+              <p>recomments</p>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper__main_news" id="blog">
+          <header class="wrapper__main_news_header">
+            <span>lATEST NEWS</span>
+            <h1>From Our Blog</h1>
+          </header>
+          <div class="wrapper__main_news_content">
+            <div class="wrapper__main_news_content_block reveal">
+              <div class="wrapper__main_news_content_block_img decor-border">
+                <img src="./assets/news-1.png" alt="biege-furniture" />
+                <div class="decor-border-img"></div>
+              </div>
+              <div class="wrapper__main_news_content_block_content">
+                <h3>2020 Interior Design Trends</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Adipisci ullam ratione quas veniam in, consequatur rerum
+                  maiores aspernatur animi odit!
+                </p>
+                <button class="btn_leaf">Continue reading....</button>
+              </div>
+            </div>
+            <div class="wrapper__main_news_content_block reveal">
+              <div class="wrapper__main_news_content_block_img decor-border">
+                <img src="./assets/news-2.png" alt="biege-furniture" />
+                <div class="decor-border-img"></div>
+              </div>
+              <div class="wrapper__main_news_content_block_content">
+                <h3>28 Notable Product at ARC Interior Design</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Adipisci ullam ratione quas veniam in, consequatur rerum
+                  maiores aspernatur animi odit!
+                </p>
+                <button class="btn_leaf">Continue reading....</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper__main_testimonials" id="testimonials">
+          <header class="wrapper__main_testimonials_header">
+            <span>TESTIMONIALS</span>
+            <h1>Client says about us</h1>
+          </header>
+          <div
+            class="wrapper__main_testimonials_content"
+            id="testimonials-content"
+          >
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-buttons">
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev swiper-btn"></div>
+                <div class="swiper-button-next swiper-btn"></div>
+              </div>
+
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="testimonial">
+                    <div class="testimonial_img-cont">
+                      <img src="./assets/testimonials-1.png" alt="user" />
+                    </div>
+                    <div class="testimonial_content">
+                      <h3>Louis Saville<span>/CEO at Google inc</span></h3>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Voluptatem suscipit rerum fuga, voluptate
+                        distinctio totam!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial">
+                    <div class="testimonial_img-cont">
+                      <img src="./assets/testimonials-2.png" alt="user" />
+                    </div>
+                    <div class="testimonial_content">
+                      <h3>Rekha Varadwaz<span>/Manager at Nike inc</span></h3>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Voluptatem suscipit rerum fuga, voluptate
+                        distinctio totam!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial">
+                    <div class="testimonial_img-cont">
+                      <img src="./assets/testimonials-1.png" alt="user" />
+                    </div>
+                    <div class="testimonial_content">
+                      <h3>Louis Saville<span>/CEO at Google inc</span></h3>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Voluptatem suscipit rerum fuga, voluptate
+                        distinctio totam!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial">
+                    <div class="testimonial_img-cont">
+                      <img src="./assets/testimonials-2.png" alt="user" />
+                    </div>
+                    <div class="testimonial_content">
+                      <h3>Rekha Varadwaz<span>/Manager at Nike inc</span></h3>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Voluptatem suscipit rerum fuga, voluptate
+                        distinctio totam!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial">
+                    <div class="testimonial_img-cont">
+                      <img src="./assets/testimonials-1.png" alt="user" />
+                    </div>
+                    <div class="testimonial_content">
+                      <h3>Louis Saville<span>/CEO at Google inc</span></h3>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Voluptatem suscipit rerum fuga, voluptate
+                        distinctio totam!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial">
+                    <div class="testimonial_img-cont">
+                      <img src="./assets/testimonials-2.png" alt="user" />
+                    </div>
+                    <div class="testimonial_content">
+                      <h3>Rekha Varadwaz<span>/Manager at Nike inc</span></h3>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Voluptatem suscipit rerum fuga, voluptate
+                        distinctio totam!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Slider-small main container -->
+            <div class="swiper swiper-small">
+              <!-- Additional required wrapper -->
+              <div class="swiper-buttons">
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev swiper-btn"></div>
+                <div class="swiper-button-next swiper-btn"></div>
+              </div>
+
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="testimonial">
+                    <div class="testimonial_img-cont">
+                      <img src="./assets/testimonials-1.png" alt="user" />
+                    </div>
+                    <div class="testimonial_content">
+                      <h3>Louis Saville<span>/CEO at Google inc</span></h3>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Voluptatem suscipit rerum fuga, voluptate
+                        distinctio totam!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial">
+                    <div class="testimonial_img-cont">
+                      <img src="./assets/testimonials-2.png" alt="user" />
+                    </div>
+                    <div class="testimonial_content">
+                      <h3>Rekha Varadwaz<span>/Manager at Nike inc</span></h3>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Voluptatem suscipit rerum fuga, voluptate
+                        distinctio totam!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial">
+                    <div class="testimonial_img-cont">
+                      <img src="./assets/testimonials-1.png" alt="user" />
+                    </div>
+                    <div class="testimonial_content">
+                      <h3>Louis Saville<span>/CEO at Google inc</span></h3>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Voluptatem suscipit rerum fuga, voluptate
+                        distinctio totam!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial">
+                    <div class="testimonial_img-cont">
+                      <img src="./assets/testimonials-2.png" alt="user" />
+                    </div>
+                    <div class="testimonial_content">
+                      <h3>Rekha Varadwaz<span>/Manager at Nike inc</span></h3>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Voluptatem suscipit rerum fuga, voluptate
+                        distinctio totam!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial">
+                    <div class="testimonial_img-cont">
+                      <img src="./assets/testimonials-1.png" alt="user" />
+                    </div>
+                    <div class="testimonial_content">
+                      <h3>Louis Saville<span>/CEO at Google inc</span></h3>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Voluptatem suscipit rerum fuga, voluptate
+                        distinctio totam!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial">
+                    <div class="testimonial_img-cont">
+                      <img src="./assets/testimonials-2.png" alt="user" />
+                    </div>
+                    <div class="testimonial_content">
+                      <h3>Rekha Varadwaz<span>/Manager at Nike inc</span></h3>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Voluptatem suscipit rerum fuga, voluptate
+                        distinctio totam!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pyro" id="fireworks">
+          <div class="before"></div>
+          <div class="after"></div>
+        </div>
+        <div class="wrapper__main_newsletter" id="newsletter">
+          <header class="wrapper__main_newsletter_header">
+            <h1>DON’T FORGET TO SIGN UP</h1>
+            <div class="divider"></div>
+            <span
+              >Find out early about all upcoming promotions and new product
+              releases with our newsletter.</span
+            >
+          </header>
+          <form id="newsletter-form" autocomplete="off">
+            <div class="wrapper__main_newsletter_form">
+              <label for="input-name" class="input-name_label">
+                <input
+                  id="input-name"
+                  class="input-name"
+                  type="text"
+                  placeholder="Enter your name..."
+                  required
+                />
+                <br />
+                <span class="error" aria-live="polite"></span>
+              </label>
+              <label for="input-surname" class="input-surname_label">
+                <input
+                  id="input-surname"
+                  class="input-surname"
+                  type="text"
+                  placeholder="Enter your surname..."
+                  required
+                />
+                <br />
+                <span class="error" aria-live="polite"></span>
+              </label>
+              <label for="input-email" class="input-email_label">
+                <input
+                  id="input-email"
+                  class="input-email"
+                  type="text"
+                  placeholder="Enter your e-mail..."
+                  required
+                />
+                <br />
+                <span class="error" aria-live="polite"></span>
+              </label>
+            </div>
+            <button class="btn_leaf" id="submit-btn">Subscribe</button>
+          </form>
+        </div>
+      </main>
+      <footer class="wrapper__footer">
+        <div class="wrapper__footer_content">
+          <div class="wrapper__footer_content_header">
+            <div class="wrapper__header_logo">
+              <img src="./assets/logo.svg" alt="decbase" />
+            </div>
+            <p>
+              But i must explain to you all this mistaken idea of dencouncing
+              pleasure.
+            </p>
+          </div>
+          <div class="wrapper__footer_content_nav">
+            <div class="wrapper__footer_content_nav_column">
+              <h5>Quick Links</h5>
+              <nav>
+                <a href="#">About Our Company</a>
+                <a href="#">Services We Provide</a>
+                <a href="#">Career & Opportunity</a>
+                <a href="#">Privacy & Policy</a>
+                <a href="#">Contact Us</a>
+              </nav>
+            </div>
+            <div class="wrapper__footer_content_nav_column">
+              <h5>Company</h5>
+              <nav>
+                <a href="#">About Company</a>
+                <a href="#">Our Testimonials</a>
+                <a href="#">Latest News</a>
+                <a href="#">Our Mission</a>
+                <a href="#">Get A Free Quot</a>
+              </nav>
+            </div>
+            <div class="wrapper__footer_content_nav_column">
+              <h5>Contact us</h5>
+              <nav>
+                <p>Sagrada Familia, Herba</p>
+                <p>Street Front USA</p>
+                <p>brandoxide@gmail.com</p>
+                <p>002-568423591</p>
+              </nav>
+            </div>
+            <div class="wrapper__footer_content_nav_column">
+              <h5>Follow Us</h5>
+              <div class="wrapper__footer_content_outbound_socials">
+                <div class="socials__circle">
+                  <a target="_blank" href="https://www.facebook.com/">
+                    <img src="./assets/fb-icon.svg" alt="facebook" />
+                  </a>
+                </div>
+                <div class="socials__circle">
+                  <a target="_blank" href="https://twitter.com/">
+                    <img src="./assets/tw-icon.svg" alt="twitter" />
+                  </a>
+                </div>
+                <div class="socials__circle">
+                  <a target="_blank" href="https://www.instagram.com/">
+                    <img src="./assets/ig-icon.svg" alt="instagram" />
+                  </a>
+                </div>
+                <div class="socials__circle">
+                  <a target="_blank" href="https://www.linkedin.com/">
+                    <img src="./assets/li-icon.svg" alt="linked-in" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <p>
+          Copyright @<span id="footer-year"></span> <span>Brandoxide</span>.all
+          right reserved.
+        </p>
+      </footer>
+      <div id="popup1" class="overlay">
+        <div class="popup">
+          <a class="close" href="#">&times;</a>
+          <h2>Congratulations!</h2>
+          <p>
+            You're lucky to be named Victoria! Every Victoria-user gets 120%
+            discount!
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+.swiper {
+  @include flex($d: column, $a-items: unset, $g: 1em);
+  .swiper-buttons {
+    @include flex($a-items: center, $j-content: flex-end, $g: 1em);
+    margin: 1em;
+    .swiper-button-prev {
+      background: #ffffff;
+      color: #646464;
+    }
+    .swiper-button-next {
+      background: #37806b;
+      color: #ffffff;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      margin-top: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      position: relative;
+      width: 2em;
+      height: 2em;
+      box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
+      border-radius: 50%;
+    }
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+      font-size: 1.6rem;
+    }
+  }
+  .swiper-wrapper {
+    .swiper-slide {
+      margin: 1em 0;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+.overlay {
+  @include flex($j-content: center, $a-items: center);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  &:target {
+    visibility: visible;
+    z-index: 10;
+    opacity: 1;
+  }
+}
+
+.popup {
+  @include flex($d: column, $j-content: center, $a-items: center);
+  padding: 2em;
+  background: #ffffff;
+  border-radius: 5px;
+  position: relative;
+  transition: all 5s ease-in-out;
+  h2 {
+    min-height: 2em;
+    @include poppins($fw: 600, $fz: 3rem, $lh: 0.95);
+    color: #212121;
+
+    @media screen and (max-width: $large) {
+      @include poppins($fw: 600, $fz: 2rem, $lh: 0.95);
+    }
+    @media screen and (max-width: $medium) {
+      @include poppins($fw: 600, $fz: 2rem, $lh: 0.95);
+    }
+  }
+  p {
+    @include google-sans($fw: 400, $fz: 1.8rem, $lh: 1.6);
+    color: #646464;
+
+    @media screen and (max-width: $medium) {
+      @include google-sans($fw: 400, $fz: 1.3rem, $lh: 1.6);
+    }
+  }
+
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    &:hover {
+      color: #06d85f;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .popup {
+    width: 70%;
+  }
+}
